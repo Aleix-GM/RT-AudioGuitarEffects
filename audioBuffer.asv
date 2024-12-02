@@ -24,8 +24,8 @@ Fs = 48000;                 % professional audio sampling rate
 Ts = 1/Fs;
 buffer_size = 256;          % 5 ms lattency buffer for that sampling frequency
 compensation_gain = 1/2.5;  % Restore signal to Volts
-input_gain = 10.0;           % input gain for the signal to be reporduced louder
-out_level = 0.45;            % output level adjustment
+input_gain = 1.0;           % input gain for the signal to be reporduced louder
+out_level = 1.0;            % output level adjustment
 
 % audio player recorder is used for simplification an speed
 aPR = audioPlayerRecorder('Device', "ASIO UX1",'SampleRate',Fs, 'BitDepth','24-bit integer');
